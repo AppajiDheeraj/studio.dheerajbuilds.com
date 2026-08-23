@@ -1,4 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { LineShadowText } from "@/components/ui/line-shadow-text"
 
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/appaji-dheeraj", Icon: FaLinkedinIn },
@@ -11,7 +12,7 @@ export function ClosingFooter() {
   return (
     <section className="relative grid min-h-[125svh] grid-rows-[50svh_75svh] overflow-hidden bg-[#0f0f0f] sm:h-svh sm:min-h-0 sm:grid-rows-2" aria-label="Thank you and contact">
       <div className="relative grid h-full grid-cols-2 content-between bg-white px-5 pb-6 pt-8 md:px-8 md:pb-7 md:pt-10">
-        <h2 className="relative z-20 col-span-2 m-0 text-center font-sans text-[clamp(3.5rem,8vw,7rem)] font-medium leading-none tracking-[-0.05em] text-neutral-950">Thank You</h2>
+        <h2 className="relative z-20 col-span-2 m-0 text-center font-sans text-[clamp(3.5rem,8vw,7rem)] font-medium leading-none tracking-[-0.05em] text-neutral-950">Thank<LineShadowText className="italic">You</LineShadowText></h2>
         <p className="relative z-20 m-0 text-base text-neutral-600 md:text-xl">(Creative)</p>
         <p className="relative z-20 m-0 text-right text-base text-neutral-600 md:text-xl">(Design)</p>
       </div>
